@@ -1,13 +1,16 @@
 import random
 
-def ask_questions(dict):
+def ask_questions(dict,shuffle=True):
     dict_keys = list(dict.keys())
 
     correct_count = 0
     wrong_count = 0
 
     for j in range(len(dict_keys)):
-        word = dict_keys[random.randint(0,len(dict_keys)-1)]
+        if shuffle:
+            word = dict_keys[random.randint(0,len(dict_keys)-1)]
+        else:
+            word = dict_keys[0]
         dict_keys.remove(word)
         finish=0
         while (not finish):
