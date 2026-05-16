@@ -1,0 +1,3 @@
+dict = {"apples":"red","tea":"red","yoghurt":"red","vinegar":"red","grape":"red","citrus fruits":"red","soft drinks":"red","spinach":"red","body lotion":"red","hair conditioner":"red","toilet cleaner":"red","aspirin":"red","toothpaste":"blue","glass cleaner":"blue","kitchen cleaner":"blue","drain cleaner":"blue","soap":"blue","alkaline batteries":"blue"}
+import revisionHelper as rh
+rh.ask_questions(dict)  # Ask the user questions based on the dictionary
